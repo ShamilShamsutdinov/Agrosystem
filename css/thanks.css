@@ -1,0 +1,623 @@
+body{
+    box-sizing: border-box;
+}
+
+.site-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/thanks-bj.webp');
+    min-height: 100vh;
+}
+
+.site-container::after{
+    background-image: url('../images/site-line.webp');
+    background-repeat: repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -7px;
+    width: 770px;
+    height: 99.4%;
+
+}
+
+.thanks__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.footer{
+  margin-top: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.thanks {
+  position: relative;
+  background-size: 100%;
+  padding-bottom: 30px;
+   
+}
+
+.thanks__wrapper::before{
+    content: '';
+    position: absolute;
+    top: 55px;
+    right: -158px;
+    width: 540px;
+    height: 540px;
+    background-image: url('../images/thanks-bj-ellipse.webp');
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+.thanks__wrapper::after{
+    content: '';
+    position: absolute;
+    width: 518px;
+    height: 635px;
+    top: -48px;
+    right: -146px;
+    background-image: url('../images/founder-2.webp');
+    background-repeat: no-repeat;
+    z-index: 15;
+
+}
+
+
+
+.header__thanks {
+    position: relative;
+    padding-top: 33px;
+    padding-bottom: 66px;
+    z-index: 10;
+  
+}
+  
+.header__thanks::after{
+  
+}
+
+.header__thanks::before{
+    content: '';
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    width: 849px;
+    height: 785px;
+    background-image: url('../images/header-bg.webp');
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.header__thanks-phone{
+    text-align: end;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.phone-thanks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    
+}
+
+.phone-thanks span a {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    color: var(--black);
+    text-decoration: none;
+  }
+  
+  .phone-thanks span a::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -31px;
+    width: 28px;
+    height: 32px;
+    background-image: url('../images/Icon_phone.svg');
+    background-repeat: no-repeat;
+  
+  }
+
+.thanks__wrapper {
+    position: relative;
+    display: flex;
+    z-index: 20;
+}
+.thanks__content-left {
+    margin-right: 152px;
+}
+
+.thanks__title-block {
+    margin-bottom: 20px;
+}
+
+.thanks__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.thanks__title span {
+   color: var(--orange);
+}
+
+.thanks__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.thanks__descr {
+    line-height: 160%;
+    color: var(--black);
+}
+
+.thanks__card {
+   max-width: 653px;
+   margin-bottom: 20px;
+}
+
+.thanks__card-top {
+    max-width: 653px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(39.65deg, #EF9C14 0%, #F18231 50%, #F2B34B 100%);
+    border-radius: 20px 20px 0px 0px ;
+    padding: 13px 20px 13px 60px;
+}
+
+.thanks__card-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.thanks__card-title::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: -36px;
+    background-image: url('../images/thanks-card-svg.svg');
+    background-repeat: no-repeat;
+}
+
+.thanks__card-weekdays {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+
+.thanks__card-weekends {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--white);
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.thanks__card-bottom {
+   max-width: 653px;
+   background-color: var(--white);
+   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.15);
+   border-radius: 0px 0px 20px 20px;
+   padding: 13px 20px 13px 30px;
+}
+
+.thanks__card-time {
+    line-height: 160%;
+    color: #2E2E2F;
+}
+
+.thanks__card-subtitle {
+    max-width: 653px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.thanks__bottom {
+
+}
+
+.thanks__text-dating {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--black);
+}
+
+.thanks__site-block { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.thanks__site-info {
+    line-height: 160%;
+    color: var(--black);
+    margin-right: 5px;
+}
+.thanks__site-link {
+}
+.thanks__site-img {
+}
+.thanks__slogan {
+    max-width: 770px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.thanks__main-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-decoration: underline;
+    background: linear-gradient(39.65deg, #EF9C14 0%, #F18231 50%, #F2B34B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.thanks__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.thanks__label {
+    background: var(--dark-blue);
+    border-radius: 10px;
+    padding: 10px 20px 17px 20px;
+    z-index: 20;
+    
+}
+
+.thanks__label-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--white);
+}
+
+.thanks__label-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--grey);
+}
+
+.thanks__img-ellipse {
+    display: none;
+}
+
+.thanks__img-founder {
+    display: none;
+}
+
+@media screen and (max-width: 1800px) {
+    .site-container::after{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1470px) {
+    .thanks__wrapper::before{
+        content: '';
+        position: absolute;
+        top: 225px;
+        right: -63px;
+        width: 330px;
+        height: 330px;
+        background-image: url('../images/thanks-bj-ellipse.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 11;
+    }
+    
+    .thanks__wrapper::after{
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 430px;
+        top: 115px;
+        right: -78px;
+        background-image: url('../images/founder-2.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 15;
+    
+    }
+    
+}
+
+@media screen and (max-width: 1340px) {
+    .thanks__slogan {
+       font-size: 28px;
+    }
+
+    .thanks__label-name {
+        font-size: 14px;
+        
+    }
+    
+    .thanks__label-descr {
+        font-size: 14px;
+       
+    }
+
+    .thanks__content-left{
+        margin-right: 0px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 992px) {
+    .thanks__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thanks__wrapper::before{
+       display: none;
+    }
+    
+    .thanks__wrapper::after{
+       display: none;
+    
+    }
+
+    .thanks__img-ellipse {
+        display: block;
+        background-image: url('../images/thanks-bj-ellipse.webp');
+        background-repeat: no-repeat;
+        width: 330px;
+        height: 330px;
+        background-size: contain;
+        
+    }
+
+    .thanks__img-founder {
+        display: block;
+        content: '';
+        position: absolute;
+        object-fit: contain;
+        width: 350px;
+        height: 430px;
+        top: -54px;
+        left: -10px;
+    }
+
+    .thanks__title{
+        font-size: 30px;
+    }
+
+    .thanks__subtitle{
+        font-size: 20px;
+    }
+
+    .thanks__card-title {
+        font-size: 14px;
+       
+    }
+    
+    .thanks__card-weekdays {
+        font-size: 14px;
+      
+    }
+    
+    .thanks__card-weekends {
+        font-size: 14px;
+      
+    }
+
+    .thanks__label-name {
+        font-size: 14px;
+        
+    }
+    
+    .thanks__label-descr {
+        font-size: 14px;
+       
+    }
+
+    .thanks__content-left{
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .thanks__content-right{
+        position: relative;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    .thanks__title{
+        font-size: 28px;
+    }
+
+    
+    .thanks__subtitle{
+        font-size: 18px;
+    }
+
+    .thanks__slogan{
+        font-size: 25px;
+    }
+
+    .thanks__img-ellipse {
+        display: block;
+        background-image: url('../images/thanks-bj-ellipse.webp');
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .thanks__img-founder {
+        display: block;
+        content: '';
+        position: absolute;
+        object-fit: contain;
+        width: 300px;
+        height: 430px;
+        top: -30px;
+        left: 0px;
+    }
+
+    .thanks__content-right{
+        position: relative;
+        padding-top: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 568px){
+    .header__thanks::before{
+       display: none;
+    }
+
+    .header__thanks{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .thanks__title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .phone-thanks span a{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .header__thanks-phone{
+        margin-bottom: 0px;
+    }
+
+    .callback-1.calthanks{
+        font-size: 11px;
+    }
+
+    .phone-thanks span a::before{
+       position: absolute;
+       width: 14px;
+       height: 14px;
+       left: -22px;
+       background-size: contain;
+    }
+
+    
+    .thanks__subtitle{
+        font-size: 13px;
+    }
+
+    .thanks__card-top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .thanks__card-time{
+        margin-bottom: 10px;
+    }
+
+    .thanks__card-subtitle{
+        font-size: 13px;
+    }
+
+    .thanks__text-dating{
+        font-size: 13px;
+    }
+
+    .thanks__site-block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .thanks__slogan{
+        font-size: 16px;
+       
+    }
+
+    .thanks__img-ellipse {
+        display: block;
+        background-image: url('../images/thanks-bj-ellipse.webp');
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .thanks__img-founder {
+        display: block;
+        content: '';
+        position: absolute;
+        object-fit: contain;
+        width: 300px;
+        height: 430px;
+        top: -30px;
+        left: -10px;
+    }
+
+    .thanks__content-right{
+        position: relative;
+        padding-top: 40px;
+    }
+
+}
